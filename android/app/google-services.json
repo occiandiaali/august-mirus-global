@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "314774586347",
+    "firebase_url": "https://mg-store-dd948.firebaseio.com",
+    "project_id": "mg-store-dd948",
+    "storage_bucket": "mg-store-dd948.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314774586347:android:94e145a9047368ae630fae",
+        "android_client_info": {
+          "package_name": "com.occian.mirusglobal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314774586347-k9ueurresa6314c3is1fmlr0746n05e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr2o-bL_CETVQJ1pLbFkJkKBK-IPhyzWk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314774586347-k9ueurresa6314c3is1fmlr0746n05e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

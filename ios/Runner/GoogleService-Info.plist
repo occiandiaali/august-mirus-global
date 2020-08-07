@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>314774586347-kvs4boe9o0r2s05hbvn5b27a1o5dm09b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.314774586347-kvs4boe9o0r2s05hbvn5b27a1o5dm09b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA4JqN_KpboGDfPpx3pzpC66Bm1maBqVwA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>314774586347</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.occian.mirusglobal</string>
+	<key>PROJECT_ID</key>
+	<string>mg-store-dd948</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mg-store-dd948.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:314774586347:ios:69939d56517461d4630fae</string>
+	<key>DATABASE_URL</key>
+	<string>https://mg-store-dd948.firebaseio.com</string>
+</dict>
+</plist>
