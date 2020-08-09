@@ -188,6 +188,8 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
               Navigator.of(context).push(MaterialPageRoute(
                   builder: (BuildContext context) => CartPage()));
             },
+            foregroundColor: Colors.black54,
+            backgroundColor: Colors.yellow[600],
             child: Icon(Icons.shopping_cart),
           ),
           CircleAvatar(
@@ -202,38 +204,54 @@ class _ItemDetailPageState extends State<ItemDetailPage> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
-        color: Theme.of(context).primaryColor,
+        // color: Theme.of(context).primaryColor,
         elevation: 0.0,
         shape: CircularNotchedRectangle(),
-        notchMargin: 2.0,
+        notchMargin: 20.0,
         child: Container(
           height: 80.0,
           decoration: BoxDecoration(color: Theme.of(context).primaryColor),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              Container(
-                width: (screenSize.width - 20) / 2,
-                child: Text(
-                  'add to favourites',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w700),
-                ),
-              ),
-              Container(
-                width: (screenSize.width - 20) / 2,
-                child: Text(
-                  'order now',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 18.0,
-                      fontWeight: FontWeight.w700),
-                ),
-              ),
+              FlatButton(
+                  onPressed: null,
+                  child: Text(
+                    'Buy Now',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 21,
+                        fontWeight: FontWeight.w600),
+                  )),
+              FlatButton(
+                  onPressed: null,
+                  child: Icon(
+                    Icons.favorite_border,
+                    color: Colors.white,
+                    size: 31.0,
+                  ))
+              // Container(
+              //   width: (screenSize.width - 20) / 2,
+              //   child: Text(
+              //     'Add To Favourites',
+              //     textAlign: TextAlign.center,
+              //     style: TextStyle(
+              //         color: Colors.white,
+              //         fontSize: 18.0,
+              //         fontWeight: FontWeight.w700),
+              //   ),
+              // ),
+              // Container(
+              //   width: (screenSize.width - 20) / 2,
+              //   child: Text(
+              //     'Buy Now',
+              //     textAlign: TextAlign.center,
+              //     style: TextStyle(
+              //         color: Colors.white,
+              //         fontSize: 18.0,
+              //         fontWeight: FontWeight.w700),
+              //   ),
+              // ),
             ],
           ),
         ),
