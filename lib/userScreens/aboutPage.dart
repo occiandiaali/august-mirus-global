@@ -78,18 +78,18 @@ class AboutPage extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Image.network(
-            'https://cdn.pixabay.com/photo/2018/12/05/12/06/container-3857611_640.jpg',
-            width: 600,
-            height: 240,
-            fit: BoxFit.cover,
-          ),
-          // Image.asset(
-          //   'images/containers-port.jpg',
+          // Image.network(
+          //   'https://cdn.pixabay.com/photo/2018/12/05/12/06/container-3857611_640.jpg',
           //   width: 600,
           //   height: 240,
           //   fit: BoxFit.cover,
           // ),
+          Image.asset(
+            'assets/dock.jpg',
+            width: 600,
+            height: 240,
+            fit: BoxFit.cover,
+          ),
           titleSection,
           buttonSection,
           textSection,

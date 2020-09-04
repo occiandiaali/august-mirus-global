@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mirusglobal/adminScreens/admin_home.dart';
 import 'package:mirusglobal/tools/Store.dart';
 import 'package:mirusglobal/userScreens/itemDetailPage.dart';
 import 'favsPage.dart';
@@ -8,7 +9,9 @@ import 'cartPage.dart';
 import 'profileSettingsPage.dart';
 // import 'helpPage.dart';
 import 'aboutPage.dart';
-import 'loginPage.dart';
+//import 'loginPage.dart';
+import 'login_page.dart';
+import 'sign_in.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -17,13 +20,17 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   BuildContext context;
+
   @override
   Widget build(BuildContext context) {
     this.context = context;
     return Scaffold(
       appBar: AppBar(
+        title: GestureDetector(
+          onLongPress: () => openAdmin(),
+          child: Text('Mirus Global'),
+        ),
         centerTitle: true,
-        title: Text('Mirus Global'),
         actions: <Widget>[
           IconButton(
             icon: Icon(
@@ -202,8 +209,8 @@ class _HomePageState extends State<HomePage> {
         child: Column(
           children: <Widget>[
             UserAccountsDrawerHeader(
-              accountName: Text('occian44'),
-              accountEmail: Text('ocean.diaali@gmail.com'),
+              accountName: Text('occian_mama'), // see here
+              accountEmail: Text('ocean.diaali@gmail.com'), // see here
               currentAccountPicture: CircleAvatar(
                 backgroundColor: Colors.white,
                 child: Icon(Icons.person),
@@ -249,7 +256,7 @@ class _HomePageState extends State<HomePage> {
                   size: 20.0,
                 ),
               ),
-              title: Text('Help'),
+              title: Text('FAQs'),
             ),
             Divider(),
             ListTile(
@@ -259,7 +266,7 @@ class _HomePageState extends State<HomePage> {
                   size: 20.0,
                 ),
               ),
-              title: Text('About Us'),
+              title: Text('About Us & Support'),
               onTap: () {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (BuildContext context) {
@@ -276,10 +283,15 @@ class _HomePageState extends State<HomePage> {
               ),
               title: Text('Logout'),
               onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (BuildContext context) {
+                signOutGoogle();
+                Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(builder: (context) {
                   return LoginPage();
-                }));
+                }), ModalRoute.withName('/'));
+                // Navigator.of(context)
+                //     .push(MaterialPageRoute(builder: (BuildContext context) {
+                //   return signOutGoogle();
+                // }));
               },
             ),
           ],
@@ -287,4 +299,9 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-}
+
+  openAdmin() {
+    Navigator.of(context).push(
+        MaterialPageRoute(builder: (BuildContext context) => AdminHome()));
+  }
+} // class

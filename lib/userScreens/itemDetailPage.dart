@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:mirusglobal/userScreens/cartPage.dart';
 
 class ItemDetailPage extends StatefulWidget {
-  String itemName;
-  String itemImage;
-  String itemSubName;
-  double itemPrice;
-  double itemRating;
+  final String itemName;
+  final String itemImage;
+  final String itemSubName;
+  final double itemPrice;
+  final double itemRating;
 
   ItemDetailPage(
       {this.itemName,
